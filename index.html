@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap-er-Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-green-50">
+    <h2 class="text-5xl text-yellow-500 text-center font-semibold">Baap er Bank!!!</h2>
+    <p class="text-center text-gray-600 text-3xl font-bold mt-3">Let's get some <span
+            class="text-indigo-400">Mooooooooney!</span></p>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8 text-white">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-yellow-400 p-8 rounded">
+                    <h2 class="text-2xl">Deposit</h2>
+                    <h2 class="text-3xl f">$00</h2>
+                </div>
+                <div class="bg-green-500 p-8 rounded">
+                    <h2 class="text-2xl">Withdraw</h2>
+                    <h2 class="text-3xl">$00</h2>
+                </div>
+                <div class="bg-pink-500 p-8 rounded">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h2 class="text-3xl">$00</h2>
+                </div>
+            </div>
+        </section>
+        <!-----------------------Deposit and withdraw section-------------------->
+        <section class="mt-8 text-white">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-purple-600 p-8 rounded">
+                    <h2 class="text-lg">Please Deposit</h2>
+                    <input type="number" class="block px-2 w-3/4 h-8 rounded border border-indigo-400"
+                        placeholder="$Amount you want to deposit">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded mt-4 font-semibold">Deposit</button>
+                </div>
+                <div class="bg-indigo-600 p-8 rounded">
+                    <h2 class="text-lg">Please Withdraw</h2>
+                    <input type="text" class="w-3/4 h-8 px-2 border border-indigo-500 rounded"
+                        placeholder="$Amount you want to withdraw">
+                    <button class="bg-green-500 px-4 py-2 rounded mt-4 font-semibold">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
