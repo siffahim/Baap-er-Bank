@@ -11,43 +11,50 @@
 
 <body class="bg-green-50">
     <h2 class="text-5xl text-yellow-500 text-center font-semibold">Baap er Bank!!!</h2>
-    <p class="text-center text-gray-600 text-3xl font-bold mt-3">Let's get some <span
-            class="text-indigo-400">Mooooooooney!</span></p>
+    <p class="text-center text-gray-600 text-4xl font-bold mt-3">Let's get some <span
+            class="text-indigo-400">Moooooooney!</span></p>
     <main class="w-3/4 mx-auto">
         <section class="mt-8 text-white">
             <div class="grid grid-cols-3 gap-4">
                 <div class="bg-yellow-400 p-8 rounded">
-                    <h2 class="text-2xl">Deposit</h2>
-                    <h2 class="text-3xl f">$00</h2>
+                    <h2 class="text-2xl font-bold">Deposit</h2>
+                    <h2 class="text-3xl">$<span id="deposit-display">00</span></h2>
                 </div>
                 <div class="bg-green-500 p-8 rounded">
-                    <h2 class="text-2xl">Withdraw</h2>
-                    <h2 class="text-3xl">$00</h2>
+                    <h2 class="text-2xl font-bold">Withdraw</h2>
+                    <h2 class="text-3xl">$<span id="withdraw-display">00</span></h2>
                 </div>
                 <div class="bg-pink-500 p-8 rounded">
-                    <h2 class="text-2xl">Balance</h2>
-                    <h2 class="text-3xl">$00</h2>
+                    <h2 class="text-2xl font-bold">Balance</h2>
+                    <h2 class="text-3xl">$<span id="balance-display">00</span></h2>
                 </div>
             </div>
         </section>
         <!-----------------------Deposit and withdraw section-------------------->
         <section class="mt-8 text-white">
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-purple-600 p-8 rounded">
+                <div class="bg-green-500 p-8 rounded">
                     <h2 class="text-lg">Please Deposit</h2>
-                    <input type="number" class="block px-2 w-3/4 h-8 rounded border border-indigo-400"
-                        placeholder="$Amount you want to deposit">
-                    <button class="bg-yellow-500 text-white px-4 py-2 rounded mt-4 font-semibold">Deposit</button>
+                    <input type="number" class="block px-2 w-3/4 h-8 rounded border border-indigo-400 text-black"
+                        placeholder="$Amount you want to deposit" id="input-deposit">
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded mt-4 font-semibold"
+                        id="deposit-btn">Deposit</button>
                 </div>
-                <div class="bg-indigo-600 p-8 rounded">
+                <div class="bg-yellow-500 p-8 rounded">
                     <h2 class="text-lg">Please Withdraw</h2>
-                    <input type="text" class="w-3/4 h-8 px-2 border border-indigo-500 rounded"
-                        placeholder="$Amount you want to withdraw">
-                    <button class="bg-green-500 px-4 py-2 rounded mt-4 font-semibold">Withdraw</button>
+                    <input type="text" class="w-3/4 h-8 px-2 border border-indigo-500 rounded text-black"
+                        placeholder="$Amount you want to withdraw" id="input-withdraw">
+                    <button class="bg-green-500 px-4 py-2 rounded mt-4 font-semibold"
+                        id="withdraw-btn">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!---------------------
+        connect with script file
+    ---------------------->
+    <script src="app.js"></script>
 </body>
 
 </html>
